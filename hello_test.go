@@ -11,3 +11,10 @@ func TestHelloFunc(t *testing.T) {
 	
 }
 
+func TestTimesTwo(t *testing.T) {
+	two := TimesTwo(4)
+
+	if two != 8 {
+		t.Fatalf("expected 8")
+	}
+}
